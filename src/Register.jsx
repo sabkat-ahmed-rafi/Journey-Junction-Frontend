@@ -57,7 +57,7 @@ const Register = () => {
               />
             </div>
             <button className="block w-full p-3 text-center rounded-md dark:text-gray-50 bg-primary font-bold">
-              Sign in
+              Sign up
             </button>
           </form>
           <p className="text-xs text-center sm:px-6 dark:text-gray-600">
@@ -68,7 +68,7 @@ const Register = () => {
               href="#"
               className="underline dark:text-gray-800"
             >
-              Sign up
+              Login
             </Link>
           </p>
         </div>
