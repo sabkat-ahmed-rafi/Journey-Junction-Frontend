@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Root";
-import Home from "./Home"
+import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Login from "./Login";
@@ -12,11 +12,13 @@ import Error from "./Error";
 import AddSpot from "./AddSpot";
 import AllSpot from "./AllSpot";
 import MyList from "./MyList";
+import Authentication from "./firebase/Authentication";
+import PrivateRoute from './PrivateRoute';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    errorElement: <Error/>,
+    errorElement: <Error />,
     element: <Root></Root>,
 
     children: [
@@ -42,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/addSpot",
-        element: <AddSpot></AddSpot>,
+        element: <PrivateRoute><AddSpot></AddSpot></PrivateRoute>,
       },
       {
         path: "/allSpot",
@@ -50,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/myList",
-        element: <MyList></MyList>,
+        element: <PrivateRoute><MyList></MyList></PrivateRoute>,
       },
     ],
   },
@@ -58,6 +60,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Authentication>
+      <RouterProvider router={router} />
+    </Authentication>
   </React.StrictMode>
 );

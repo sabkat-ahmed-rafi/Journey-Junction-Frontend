@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
+import { AuthContext } from "./firebase/Authentication";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Navbar = () => {
-  const TestUser = true;
+  
+  const {logOut, user, userLoginInfo} = useContext(AuthContext)
+  console.log(userLoginInfo)
+
+
+  const provider = new GoogleAuthProvider();
+  const handleLogOut = () => {
+    logOut(provider)
+    .then(() => {
+      // Sign-out successful.
+    })
+  }
+
 
   const li = (
     <>
@@ -67,7 +81,33 @@ const Navbar = () => {
         <div className="navbar-end space-x-4">
           {/* User, Login, Register, Buttons */}
 
-          {TestUser ? (
+          {user ? (
+            <>
+            <section>
+              <div className="relative group">
+                <div className="btn btn-ghost btn-circle avatar">
+                  <div className="w-14 rounded-full">
+                    <img
+                      alt="Tailwind CSS Navbar component"
+                      src={userLoginInfo?.photo || user?.photoURL || "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}
+                    />
+                  </div>
+                </div>
+                <ul className="absolute right-5 mt-0 z-[6] p-2 shadow menu menu-sm dropdown-content bg-slate-100 rounded-box w-52 hidden group-hover:block disappear-3s ">
+                  <li>
+                    <a className="justify-between font-bold">
+                      {userLoginInfo?.name || user?.displayName}
+                      <span className="badge font-bold">New</span>
+                    </a>
+                  </li>
+                  <li>
+                    <Link onClick={handleLogOut} to="/login" className="font-bold">Logout</Link>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            </>
+          ) : (
             <>
               <Link
                 to="/login"
@@ -82,30 +122,6 @@ const Navbar = () => {
                 Sign up
               </Link>
             </>
-          ) : (
-            <section>
-              <div className="relative group">
-                <div className="btn btn-ghost btn-circle avatar">
-                  <div className="w-14 rounded-full">
-                    <img
-                      alt="Tailwind CSS Navbar component"
-                      src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                    />
-                  </div>
-                </div>
-                <ul className="absolute right-5 mt-0 z-[1] p-2 shadow menu menu-sm dropdown-content bg-slate-100 rounded-box w-52 hidden group-hover:block disappear-3s ">
-                  <li>
-                    <a className="justify-between font-bold">
-                      Profile
-                      <span className="badge font-bold">New</span>
-                    </a>
-                  </li>
-                  <li>
-                    <Link to="/login" className="font-bold">Logout</Link>
-                  </li>
-                </ul>
-              </div>
-            </section>
           )}
         </div>
       </div>

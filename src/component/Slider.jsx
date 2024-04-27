@@ -25,37 +25,37 @@ const Slider = () => {
         >
           <SwiperSlide>
             <div className="">
-              <img src="/public/slider1.jpg" alt="" />
+              <img src="/slider1.jpg" alt="" />
               <span className="absolute left-9 bottom-12 font-bold text-white text-5xl bg-gradient-to-r from-gray-950 via-gray-950 to-gray-950 bg-clip-text filter drop-shadow-lg">Arches National Park, Utah</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src="/public/slider2.webp" alt="" />
+              <img src="/slider2.webp" alt="" />
               <span className="absolute left-9 bottom-12  font-bold text-white text-5xl bg-gradient-to-r from-gray-950 via-gray-950 to-gray-950 bg-clip-text filter drop-shadow-lg">Disneyland, California</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src="/public/slider3.jpg" alt="" />
+              <img src="/slider3.jpg" alt="" />
               <span className="absolute left-9 bottom-12  font-bold text-white text-5xl bg-gradient-to-r from-gray-950 via-gray-950 to-gray-950 bg-clip-text filter drop-shadow-lg">Hawaii Volcanoes National Park, Hawaii</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src="/public/slider4.jpg" alt="" />
+              <img src="/slider4.jpg" alt="" />
               <span className="absolute left-9 bottom-12  font-bold text-white text-5xl bg-gradient-to-r from-gray-950 via-gray-950 to-gray-950 bg-clip-text filter drop-shadow-lg">Monument Valley, Arizona</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src="/public/slider5.jpg" alt="" />
+              <img src="/slider5.jpg" alt="" />
               <span className="absolute left-9 bottom-12  font-bold text-white text-5xl bg-gradient-to-r from-gray-950 via-gray-950 to-gray-950 bg-clip-text filter drop-shadow-lg">Times Square, New York</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src="/public/slider6.jpg" alt="" />
+              <img src="/slider6.jpg" alt="" />
               <span className="absolute left-9 bottom-12  font-bold text-white text-5xl bg-gradient-to-r from-gray-950 via-gray-950 to-gray-950 bg-clip-text filter drop-shadow-lg">360 Chicago Observation Deck, Illinois</span>
             </div>
           </SwiperSlide>
