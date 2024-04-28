@@ -1,6 +1,10 @@
-
+import { useContext } from 'react';
+import Swal from 'sweetalert2'
+import { AuthContext } from './firebase/Authentication';
 
 const AddSpot = () => {
+
+  const {loading} = useContext(AuthContext)
 
   const handleAddSpot = (e) => {
 
@@ -22,11 +26,29 @@ const AddSpot = () => {
     const spotInfo = {name , email, spotName, photo, country, location, description,cost, seasonality, time, visit}
 
     console.log(spotInfo);
+	fetch('http://localhost:3000/addSpot',{
+		method: 'POST',
+		headers: {
+		  'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(spotInfo)
+	  }).then(res => res.json())
+	  .then(data => {
+		console.log(data)
+		Swal.fire({
+			position: "top-end",
+			icon: "success",
+			title: "New Spot Added",
+			showConfirmButton: false,
+			timer: 1500
+		  });
+	  })
 
   }
 
     return (
         <>
+		{loading && <span className="loading loading-bars loading-lg text-primary sticky top-[300px] left-[650px] z-10"></span>}
           <section>
           <form onSubmit={handleAddSpot} className="grid items-baseline grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-50">
 			<div className="space-y-2 col-span-full lg:col-span-1">
@@ -79,7 +101,7 @@ const AddSpot = () => {
 					<input name='visit' id="time" type="text" placeholder="Total visit per year" className="w-full border border-slate-400 p-2 rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 " />
 				</div>
         <div className='w-full'>
-          <button className='btn btn-primary text-xl text-white font-semibold w-full'>Add spot</button>
+          <button className='btn btn-primary lg:text-xl text-white font-semibold w-full'>Add spot</button>
         </div>
 			</div>
 		</form>

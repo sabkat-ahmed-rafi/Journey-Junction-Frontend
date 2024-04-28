@@ -14,6 +14,9 @@ import AllSpot from "./AllSpot";
 import MyList from "./MyList";
 import Authentication from "./firebase/Authentication";
 import PrivateRoute from './PrivateRoute';
+import SpotDetails from "./component/SpotDetails";
+import UpdateSpot from "./component/UpdateSpot";
+import CountryWise from "./component/CountryWise";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        
       },
       {
         path: "/about",
@@ -49,11 +53,27 @@ const router = createBrowserRouter([
       {
         path: "/allSpot",
         element: <AllSpot></AllSpot>,
+        
       },
       {
         path: "/myList",
         element: <PrivateRoute><MyList></MyList></PrivateRoute>,
       },
+      {
+        path: "/addSpot/spotDetails/:id",
+        element: <PrivateRoute><SpotDetails></SpotDetails></PrivateRoute>,
+        loader: ({params}) => fetch(`http://localhost:3000/addSpot/spotDetails/${params.id}`)
+      },
+      {
+        path:"/updateSpot/:id",
+        element: <PrivateRoute><UpdateSpot></UpdateSpot></PrivateRoute>,
+        loader: ({params}) => fetch(`http://localhost:3000/updateSpot/${params.id}`)
+      },
+      {
+        path: "/contries/:id",
+        element: <CountryWise></CountryWise>,
+        loader: ({params}) => fetch(`http://localhost:3000/contries/${params.id}`)
+      }
     ],
   },
 ]);

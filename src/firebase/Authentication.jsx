@@ -10,6 +10,7 @@ const Authentication = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
     const [userLoginInfo, setUserLoginInfo] = useState(null)
+    const [spot, setSpot] = useState(null)
 
     // create User
     const register = (email, password) => {
@@ -37,22 +38,38 @@ const Authentication = ({children}) => {
     // get the currently signed in use 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            if(currentUser){
-                console.log(currentUser)
-                setUser(currentUser)
-                setLoading(false)
-            }else{
-                setUser(null)
-                setLoading(false)
+            if (currentUser) {
+                console.log(currentUser);
+                setUser(currentUser);
+                setLoading(false);
+            } else {
+                setUser(null);
+                setLoading(false);
             }
         }) 
+
+        const storedUser = JSON.parse(localStorage.getItem('userLoginInfo'));
+        if (storedUser) {
+            setUserLoginInfo(storedUser);
+            // setLoading(false);
+        }
+
         return () => {
             unSubscribe()
         }
     }, [])
 
 
-    const userInfo = {register, login, logOut, googleLogin, user, loading, userLoginInfo, setUserLoginInfo}
+    
+    useEffect(() => {
+        localStorage.setItem('userLoginInfo', JSON.stringify(userLoginInfo));
+    }, [userLoginInfo]); 
+
+    
+
+    const userInfo = {register, login, logOut, googleLogin, user,setLoading, loading, userLoginInfo, setUserLoginInfo, spot, setSpot}
+
+    
 
     return (
         <>

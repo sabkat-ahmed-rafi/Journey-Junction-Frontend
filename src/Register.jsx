@@ -73,6 +73,7 @@ const Register = () => {
     .then(data => {
       console.log(data)
       console.log(data.insertedId)
+      // have to fetch it outside to stable the user photo and name 
       fetch(`http://localhost:3000/${data.insertedId}`)
       .then(res => res.json())
       .then(data => {

@@ -10,11 +10,10 @@ const About = () => {
             <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
-                  All the features you want
+                All the features you want
                 </h2>
                 <p className="mt-4 text-lg dark:text-gray-600">
-                  Pellentesque viverra, leo id euismod laoreet, nunc risus
-                  molestie orci, vel faucibus quam justo id mauris.
+                Explore a wide array of exotic destinations from around the globe, complete with stunning photographs and insider tips on must-see attractions, local cuisine, and cultural experiences.
                 </p>
               </div>
               <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
@@ -35,11 +34,9 @@ const About = () => {
                     ></path>
                   </svg>
                   <div className="ml-3">
-                    <dt className="text-lg font-medium">Quisque at urna</dt>
+                    <dt className="text-lg font-medium">Adventure Activities</dt>
                     <dd className="mt-2 dark:text-gray-600">
-                      Vivamus ultricies bibendum tortor, molestie imperdiet
-                      justo cursus eu. Donec quis arcu magna. Integer tempor
-                      egestas dolor.
+                    Embark on thrilling adventures with our curated list of adrenaline-pumping activities such as skydiving, whitewater rafting, bungee jumping, and more, guaranteed to satisfy any adventure seeker's craving.
                     </dd>
                   </div>
                 </div>
@@ -61,11 +58,10 @@ const About = () => {
                   </svg>
                   <div className="ml-3">
                     <dt className="text-lg font-medium">
-                      Quisque eu dui lacinia
+                    Cultural Immersion
                     </dt>
                     <dd className="mt-2 dark:text-gray-600">
-                      Quisque ultricies volutpat sapien nec varius. Sed sit amet
-                      justo vestibulum, efficitur risus quis, gravida libero.
+                    Immerse yourself in the rich tapestry of cultures worldwide through immersive experiences like cooking classes, traditional dance performances, and guided tours of historical landmarks, providing a deeper understanding of the destinations you visit.
                     </dd>
                   </div>
                 </div>
@@ -86,11 +82,9 @@ const About = () => {
                     ></path>
                   </svg>
                   <div className="ml-3">
-                    <dt className="text-lg font-medium">Mauris dignissim</dt>
+                    <dt className="text-lg font-medium">Ecotourism Experiences</dt>
                     <dd className="mt-2 dark:text-gray-600">
-                      Phasellus nec molestie arcu. Proin dictum, lorem mollis
-                      rutrum efficitur, lectus velit pharetra elit, et dictum
-                      purus nibh auctor velit.
+                    Delve into sustainable travel options that promote environmental conservation and responsible tourism practices, including eco-friendly accommodations, wildlife safaris, and nature treks in pristine wilderness areas.
                     </dd>
                   </div>
                 </div>
@@ -111,10 +105,10 @@ const About = () => {
                     ></path>
                   </svg>
                   <div className="ml-3">
-                    <dt className="text-lg font-medium">Proin nulla eros</dt>
+                    <dt className="text-lg font-medium">Luxury Escapes</dt>
                     <dd className="mt-2 dark:text-gray-600">
-                      Sed ornare ultricies gravida. Morbi egestas dolor turpis,
-                      ornare laoreet est vehicula non.
+                    Indulge in opulent getaways tailored to discerning travelers, featuring luxurious accommodations, exclusive dining experiences, private chauffeur services, and personalized itineraries designed for the utmost comfort and relaxation.
+
                     </dd>
                   </div>
                 </div>
@@ -135,10 +129,9 @@ const About = () => {
                     ></path>
                   </svg>
                   <div className="ml-3">
-                    <dt className="text-lg font-medium">Proin dictum</dt>
+                    <dt className="text-lg font-medium">Family-Friendly Adventures</dt>
                     <dd className="mt-2 dark:text-gray-600">
-                      Lorem mollis rutrum efficitur, lectus velit pharetra elit,
-                      et dictum purus nibh auctor velit.
+                    Plan unforgettable family vacations with our selection of kid-friendly destinations and activities, including theme parks, interactive museums, beach resorts, and family-friendly tours suitable for travelers of all ages.
                     </dd>
                   </div>
                 </div>
@@ -160,12 +153,10 @@ const About = () => {
                   </svg>
                   <div className="ml-3">
                     <dt className="text-lg font-medium">
-                      Quisque eu dui lacinia
+                    Off-the-Beaten-Path Destinations
                     </dt>
                     <dd className="mt-2 dark:text-gray-600">
-                      Cras a mauris tincidunt, scelerisque justo sit amet,
-                      hendrerit est. Fusce venenatis diam fringilla metus
-                      convallis, at dapibus enim congue.
+                    Discover hidden gems and off-the-beaten-path destinations off the tourist trail, where you can experience authentic local cultures, breathtaking landscapes, and unique traditions away from the crowds.
                     </dd>
                   </div>
                 </div>
@@ -187,12 +178,10 @@ const About = () => {
                   </svg>
                   <div className="ml-3">
                     <dt className="text-lg font-medium">
-                      Cras vel bibendum tellus
+                      Culinary Journeys
                     </dt>
                     <dd className="mt-2 dark:text-gray-600">
-                      Curabitur molestie neque ac massa pulvinar, nec
-                      sollicitudin nunc consequat. Donec mattis orci eros, vitae
-                      porttitor risus pretium eget.
+                    Embark on gastronomic adventures showcasing the diverse culinary landscapes of different regions, featuring food and wine tours, farm-to-table experiences, cooking workshops, and gourmet dining experiences curated by local experts.
                     </dd>
                   </div>
                 </div>
@@ -213,10 +202,9 @@ const About = () => {
                     ></path>
                   </svg>
                   <div className="ml-3">
-                    <dt className="text-lg font-medium">Dignissim magna</dt>
+                    <dt className="text-lg font-medium">Destination Highlights</dt>
                     <dd className="mt-2 dark:text-gray-600">
-                      Cras ac lectus erat. Curabitur condimentum luctus nisi,
-                      non lacinia ipsum.
+                    Explore a wide array of exotic destinations from around the globe, complete with stunning photographs and insider tips on must-see attractions, local cuisine, and cultural experiences.
                     </dd>
                   </div>
                 </div>
@@ -226,7 +214,7 @@ const About = () => {
         </section>
         {/* another section  */}
         <section>
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 dark:bg-gray-100 dark:text-gray-800">
+          <div className="px-4 mt-8 rounded-lg py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 dark:bg-gray-100 dark:text-gray-800">
             <h2 className="mb-8 text-4xl font-bold leading-none text-center">
               What do we have to offer?
             </h2>
@@ -240,7 +228,7 @@ const About = () => {
                   <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                   <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
-                <span>Ea et neque distinctio</span>
+                <span>Tailored Travel Experiences</span>
               </li>
               <li className="flex items-center space-x-2">
                 <svg
@@ -251,7 +239,7 @@ const About = () => {
                   <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                   <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
-                <span>Quaerat obcaecati voluptatem </span>
+                <span>Expert Guidance </span>
               </li>
               <li className="flex items-center space-x-2">
                 <svg
@@ -262,7 +250,7 @@ const About = () => {
                   <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                   <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
-                <span>Quas eius repudianda</span>
+                <span>Unforgettable Adventures</span>
               </li>
               <li className="flex items-center space-x-2">
                 <svg
@@ -273,7 +261,7 @@ const About = () => {
                   <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                   <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
-                <span>Free and MIT licensed</span>
+                <span>Cultural Enrichment</span>
               </li>
               <li className="flex items-center space-x-2">
                 <svg
@@ -284,7 +272,7 @@ const About = () => {
                   <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                   <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
-                <span>Praesentium ea et neque distinctio</span>
+                <span>Sustainable Travel Practices</span>
               </li>
               <li className="flex items-center space-x-2">
                 <svg
@@ -295,19 +283,19 @@ const About = () => {
                   <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
                   <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
                 </svg>
-                <span>Architecto beatae esse ab amet </span>
+                <span>Customer Satisfaction </span>
               </li>
             </ul>
           </div>
         </section>
         {/* another section  */}
-        <section>
-          <div className="m-4 md:m-8 dark:bg-gray-100 dark:text-gray-800">
+        <section className="rounded-lg">
+          <div className="m-4 md:m-8 rounded-lg dark:bg-gray-100 dark:text-gray-800">
             <div className="container mx-auto p-4 my-6 space-y-2 text-center">
               <h2 className="text-5xl font-bold">
-                Built to empower every team
+                Built to empower every Team
               </h2>
-              <p className="dark:text-gray-600">Libero minima optio qui</p>
+              <p className="dark:text-gray-600">Embark on a fun-filled adventure the whole family will cherish for years to come!</p>
             </div>
             <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col items-center p-4">
@@ -323,11 +311,11 @@ const About = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <h3 className="my-3 text-3xl font-semibold">Product</h3>
-                <div className="space-y-1 leading-tight">
-                  <p>Similique quas ea veniam</p>
-                  <p>Tempore quasi porro</p>
-                  <p>Blanditiis aut mollitia ex</p>
+                <h3 className="my-3 text-3xl font-semibold">Travel Planning App</h3>
+                <div className="space-y-1 leading-tight text-center">
+                  <p>Revolutionized</p>
+                  <p>Travel planning</p>
+                  <p>Discover hidden gems</p>
                 </div>
               </div>
               <div className="flex flex-col items-center p-4">
@@ -343,11 +331,11 @@ const About = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <h3 className="my-3 text-3xl font-semibold">Product</h3>
-                <div className="space-y-1 leading-tight">
-                  <p>Similique quas ea veniam</p>
-                  <p>Tempore quasi porro</p>
-                  <p>Blanditiis aut mollitia ex</p>
+                <h3 className="my-3 text-3xl font-semibold">Adventure Gear Bundle</h3>
+                <div className="space-y-1 leading-tight text-center">
+                  <p>Exclusive adventure </p>
+                  <p>High-quality equipment</p>
+                  <p>Hiking boots, backpacks, tents</p>
                 </div>
               </div>
               <div className="flex flex-col items-center p-4">
@@ -363,11 +351,11 @@ const About = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <h3 className="my-3 text-3xl font-semibold">Product</h3>
-                <div className="space-y-1 leading-tight">
-                  <p>Similique quas ea veniam</p>
-                  <p>Tempore quasi porro</p>
-                  <p>Blanditiis aut mollitia ex</p>
+                <h3 className="my-3 text-3xl text-center font-semibold">Cultural Immersion Workshops</h3>
+                <div className="space-y-1 leading-tight text-center">
+                  <p>Vibrant cultures</p>
+                  <p>Knowledgeable instructors</p>
+                  <p>Hands-on experiences offer</p>
                 </div>
               </div>
               <div className="flex flex-col items-center p-4">
@@ -383,11 +371,11 @@ const About = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <h3 className="my-3 text-3xl font-semibold">Product</h3>
-                <div className="space-y-1 leading-tight">
-                  <p>Similique quas ea veniam</p>
-                  <p>Tempore quasi porro</p>
-                  <p>Blanditiis aut mollitia ex</p>
+                <h3 className="my-3 text-3xl font-semibold">Sustainable Travel Kit</h3>
+                <div className="space-y-1 leading-tight text-center">
+                  <p>Eco-friendly travel kit</p>
+                  <p>Reusable water bottles, bamboo utensils</p>
+                  <p>Environmental footprint </p>
                 </div>
               </div>
               <div className="flex flex-col items-center p-4">
@@ -403,11 +391,11 @@ const About = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <h3 className="my-3 text-3xl font-semibold">Product</h3>
-                <div className="space-y-1 leading-tight">
-                  <p>Similique quas ea veniam</p>
-                  <p>Tempore quasi porro</p>
-                  <p>Blanditiis aut mollitia ex</p>
+                <h3 className="my-3 text-3xl font-semibold">Luxury Travel Membership</h3>
+                <div className="space-y-1 leading-tight text-center">
+                  <p>Luxury travel membership</p>
+                  <p>VIP perks</p>
+                  <p>Elite accommodations</p>
                 </div>
               </div>
               <div className="flex flex-col items-center p-4">
@@ -423,11 +411,11 @@ const About = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <h3 className="my-3 text-3xl font-semibold">Product</h3>
-                <div className="space-y-1 leading-tight">
-                  <p>Similique quas ea veniam</p>
-                  <p>Tempore quasi porro</p>
-                  <p>Blanditiis aut mollitia ex</p>
+                <h3 className="my-3 text-3xl font-semibold">Family Adventure Package</h3>
+                <div className="space-y-1 leading-tight text-center">
+                  <p>Family adventure package</p>
+                  <p>Travelers of all ages</p>
+                  <p>Family-friendly accommodations</p>
                 </div>
               </div>
             </div>
