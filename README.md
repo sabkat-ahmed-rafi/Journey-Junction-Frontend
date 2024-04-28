@@ -4,7 +4,7 @@ Welcome to JourneyJunction, your ultimate destination for exploring the wonders 
 
 ## Demo
 
-Check out the live demo of JourneyJunction [here](#).
+Check out the live demo of JourneyJunction [here](https://jovial-genie-3ee00e.netlify.app/).
 
 ## Features
 
